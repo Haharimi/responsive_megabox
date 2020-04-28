@@ -173,7 +173,7 @@ transition: all 0.3s;}
     #movie .ir_so {font-size: 18px; padding-bottom: 10px;}
     .movie_title {margin-bottom: 20px;}
     .movie_title ul {padding-bottom: 8px; white-space: nowrap; overflow-x: auto;}
-    .movie_title li a {font-size: 14px;}
+    .movie_title li a {font-size: 14px; margin-right: 15px;}
     .movie_title li.active a::before {bottom: -8px;}
     .movie_chart {position: relative; z-index: 30;}
     .movie_chart > div > div > div .info {padding: 5px;}
