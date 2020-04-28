@@ -82,11 +82,73 @@
     </header>
     <!-- header-->
 
+    <section id="banner">
+        <div class="banner_menu">
+            <h2 class="ir_so">배너 영역</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="bm_left">
+                        <ul>
+                            <li class="total"><a href="#">전체메뉴</a></li>
+                            <li class="line"><a href="#">필름 소사이어티</a></li>
+                            <li><a href="#">클래식 소사이어티</a></li>
+                        </ul>
+                    </div>
+                    <div class="bm_right">
+                        <ul>
+                            <li class="line"><a href="custom/faq.html">고객센터</a></li>
+                            <li class="line"><a href="#">멤버쉽</a></li>
+                            <li><a href="#">VIP</a></li>
+                        </ul>
+                        <ul>
+                            <li class="white"><a href="#">상영시간표</a></li>
+                            <li class="purple"><a href="#">빠른예매</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+           <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ss1">
+                        <div class="container">
+                            <div class="row">
+                                <h3>어벤져스 : 앤드게임</h3>
+                                <p>역대 최단 기간 1000만 관객 돌파 기록 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss2">
+                        <div class="container">
+                            <div class="row">
+                                <h3>어벤져스 : 앤드게임</h3>
+                                <p>역대 최단 기간 1000만 관객 돌파 기록 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss3">
+                        <div class="container">
+                            <div class="row">
+                                <h3>어벤져스 : 앤드게임</h3>
+                                <p>역대 최단 기간 1000만 관객 돌파 기록 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+
     <section id="movie">
         <div class="container">
             <div class="row">
                 <div class="movie">
-                    <h2 class="ir_so">최신 영화 정보</h2>
+                    <h2 class="ir_so">영회 예매</h2>
                     <div class="movie_title">
                         <ul>
                             <li class="active"><a href="#">박스오피스</a></li>
@@ -643,7 +705,7 @@
                 delay: 5000,
             },
         });
-
+        
         //영화차트 이미지 슬라이드
         var mySwiper = new Swiper('.swiper-container2', {
             slidesPerView: 4,
@@ -655,9 +717,23 @@
                 enabled: true,
                 onlyInViewport: false,
             },
-            autoplay: {
-                delay: 6000,
-            },
+//            autoplay: {
+//                delay: 6000,
+//            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 24
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
+            }
         });
         
         //영화차트 탭 메뉴
